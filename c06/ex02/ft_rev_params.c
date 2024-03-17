@@ -9,15 +9,16 @@ int	main(int argc, char *argv[])
 
 	// printf("%d", argc);
 	j = argc;
+	printf("%d\n", j);
 	i = 1;
 	while (i < j)
 	{
 		// temp_i = argc;
 		temp = argv[j];
-		while (*temp)
+		while (*argv)
 		{
-			write(1, temp, 1);
-			temp++;
+			write(1, argv[j], 1);
+			argv[j]++;
 		}
 		// printf("%s", argv[argc])
 		write(1, "\n", 1);
